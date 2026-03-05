@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<character x="-50" y="295" flipX="true" isPlayer="true" icon="bf" color="#30B0D1">
+	<anim name="singUP" anim="BFSlideInUp"/>
+	<anim name="singDOWN" anim="BFSlideInDown"/>
+	<anim name="singLEFT" anim="BFSlideInLeft"/>
+	<anim name="singRIGHT" anim="BFSlideInRight"/>
+	<anim name="idle" anim="BF Ground Shaking" x="-42" y="-86"/>
+	<anim name="lookAtTord" anim="BF Look At Tord" x="-50" y="-72"/>
+</character>

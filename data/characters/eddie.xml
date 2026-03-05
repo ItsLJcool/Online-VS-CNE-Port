@@ -1,0 +1,26 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="eddie" icon="edd" color="#33AD33" applyStageMatrix="true" y="105">
+	<anim name="hey" anim="EddHEY!!"/>
+	<anim name="looksUp" anim="EddLookingUp" loop="true" indices="0..5"/>
+	<anim name="turn" anim="EddLookingUp"/>
+	<anim name="idle" anim="EddIdle"/>
+	<anim name="turnAround" anim="EddTurnAround"/>
+	<anim name="groundShake" anim="EddGroundShaking" x="8" y="-5"/>
+	<anim name="lookAtTord" anim="EddTurnToTord" x="10" y="-5"/>
+	<anim name="idle-alt" anim="EddSideIdle" x="27"/>
+	<anim name="singLEFT" anim="EddLeft" x="3"/>
+	<anim name="singLEFT-alt" anim="EddSideLeft" x="28"/>
+	<anim name="singLEFT-enter" anim="EddEnterLeft" x="13" y="-136"/>
+	<anim name="singDOWN" anim="EddDown" x="-21" y="-9"/>
+	<anim name="singDOWN-alt" anim="EddSideDown" x="56" y="4"/>
+	<anim name="singDOWN-enter" anim="EddEnterDown" x="13" y="-136"/>
+	<anim name="singUP" anim="EddUp" x="4" y="5"/>
+	<anim name="singUP-alt" anim="EddSideUp" x="30" y="2"/>
+	<anim name="singUP-enter" anim="EddEnterUp" x="13" y="-136"/>
+	<anim name="singRIGHT" anim="EddRight" x="-1"/>
+	<anim name="singRIGHT-alt" anim="EddSideRight" x="20"/>
+	<anim name="singRIGHT-enter" anim="EddEnterRight" x="13" y="-136"/>
+	<anim name="firstDeath" anim="EddGameOver" x="-78" y="-32"/>
+	<anim name="deathLoop" anim="EddRetryLoop" x="-78" y="-32"/>
+	<anim name="deathConfirm" anim="EddRetryConfirm" x="-78" y="-32"/>
+</character>

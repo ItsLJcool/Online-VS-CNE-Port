@@ -1,0 +1,18 @@
+{
+	"opponentModeAllowed": false,
+	"icon": "Edd",
+	"difficulties": [
+		"hard"
+	],
+	"color": "#FFFFFF",
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"displayName": "Challengedd",
+	"needsVoices": true,
+	"beatsPerMeasure": 4,
+	"variants": [
+		"Song Variation",
+		"End Mix"
+	],
+	"bpm": 186
+}

@@ -1,0 +1,14 @@
+<!DOCTYPE codename-engine-character>
+<character icon="tord" color="#33AD33" applyStageMatrix="true" x="350" camx="-800" camy="-250">
+	<anim name="laugh" anim="TordHa"/>
+	<anim name="idle" anim="TordIdle"/>
+	<anim name="singLEFT" anim="TordLeft"/>
+	<anim name="singDOWN" anim="TordDown"/>
+	<anim name="singUP" anim="TordUp"/>
+	<anim name="singRIGHT" anim="TordRight"/>
+	<anim name="sendRocket" anim="TordButtonPress"/>
+	<anim name="pissed" anim="TordPissed"/>
+	<anim name="shot" anim="TordHarpoonShot"/>
+	<anim name="ohno" anim="TordOhNo"/>
+	<anim name="falling" anim="TordFlailing" x="-125" y="-342" loop="true"/>
+</character>

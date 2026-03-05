@@ -1,0 +1,16 @@
+{
+	"opponentModeAllowed": false,
+	"icon": "Edd",
+	"difficulties": [
+		"fucked"
+	],
+	"color": "#000000",
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"displayName": "Challengedd",
+	"needsVoices": true,
+	"beatsPerMeasure": 4,
+	"bpm": 186,
+	"instSuffix": "-End Mix",
+	"vocalsSuffix": "-End Mix"
+}

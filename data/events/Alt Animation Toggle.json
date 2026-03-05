@@ -1,0 +1,24 @@
+{
+    "params": [
+        {
+            "name": "Enable On Sing Poses",
+            "type": "Bool",
+            "defaultValue": true
+        },
+        {
+            "name": "Enable On Idle",
+            "type": "Bool",
+            "defaultValue": true
+        },
+        {
+            "name": "Strumline",
+            "type": "StrumLine",
+            "defaultValue": 0
+        },
+        {
+            "name": "Suffix Name",
+            "type": "String",
+            "defaultValue": "-alt"
+        }
+    ]
+}
