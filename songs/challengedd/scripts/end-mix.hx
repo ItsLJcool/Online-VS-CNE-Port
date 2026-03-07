@@ -1,8 +1,7 @@
 
 if (PlayState.SONG.meta?.variant?.toLowerCase() != "end mix") return disableScript();
-trace("End Mix script loaded");
 
-final whoaHUD:FlxCamera = new FlxCamera();
+public var whoaHUD:FlxCamera = new FlxCamera();
 whoaHUD.bgColor = 0;
 
 var tordStrumLine(get, never):StrumLine;
@@ -33,7 +32,7 @@ function cache_dirs() {
 
 
     // do bf here
-    bf.x += 15; bf.y -= 100;
+    bf.x += 75; bf.y -= 85;
     bf.x += 385; bf.y += 385;
     enter_pos.push({
         sing_pos: FlxPoint.get(bf.x - 385, bf.y - 385),

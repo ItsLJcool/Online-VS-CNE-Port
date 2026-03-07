@@ -3,7 +3,7 @@
 import StringTools;
 
 public var noteCamIntensity:Float = 1;
-final MOVEMENT_AMOUNT:Float = 0;
+final MOVEMENT_AMOUNT:Float = 10;
 public var _singPosMap:Map<String, {x:Float, y:Float}> = [
 	'singLEFT' => {x: -MOVEMENT_AMOUNT, y: 0},
 	'singLEFT-alt' => {x: -MOVEMENT_AMOUNT, y: 0},
@@ -15,7 +15,7 @@ public var _singPosMap:Map<String, {x:Float, y:Float}> = [
 	'singRIGHT-alt' => {x: MOVEMENT_AMOUNT, y: 0},
 ];
 
-public var disable_camera_movement:Bool = false;
+public var disable_camera_movement:Bool = true;
 
 function onCameraMove(e) {	
 	CURRENT_OFFSET_AMOUNT.x = CURRENT_OFFSET_AMOUNT.y = 0;

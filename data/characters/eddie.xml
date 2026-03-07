@@ -1,5 +1,5 @@
 <!DOCTYPE codename-engine-character>
-<character sprite="eddie" icon="edd" color="#33AD33" applyStageMatrix="true" y="105" camy="-30" camx="-25">
+<character y="105" camx="-25" camy="-30" icon="edd" color="#33AD33" applyStageMatrix="true" gameOverCharacter="eddie">
 	<anim name="hey" anim="EddHEY!!"/>
 	<anim name="looksUp" anim="EddLookingUp" loop="true" indices="0..5"/>
 	<anim name="turn" anim="EddLookingUp"/>
