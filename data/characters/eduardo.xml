@@ -1,0 +1,10 @@
+<!DOCTYPE codename-engine-character>
+<character x="25" y="200" icon="eduardo" applyStageMatrix="true" camy="-175" camx="-185">
+	<anim name="punch" anim="EduardoPunch" x="170" y="210"/>
+	<anim name="idle" anim="EduardoIdle"/>
+	<anim name="singDOWN" anim="EduardoDown"/>
+	<anim name="singRIGHT" anim="EduardoRight"/>
+	<anim name="singLEFT" anim="EduardoLeft"/>
+	<anim name="singUP" anim="EduardoUp" y="5"/>
+	<anim name="well" anim="EduardoWell"/>
+</character>

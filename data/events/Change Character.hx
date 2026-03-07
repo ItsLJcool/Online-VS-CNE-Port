@@ -1,7 +1,39 @@
 
+import Xml;
+import haxe.io.Path;
+
+import funkin.backend.system.Flags;
+
+final EVENT_NAME:String = "Change Character";
+
+function PRELOAD(?event, ?onComplete:String->Void) {
+    var charName:String = "UNKNOWN";
+    var params:Array<Dynamic> = [];
+    var toCache:Array<String> = [];
+    try {
+        params = event.params.copy();
+        charName = params[2];
+        var xml = Xml.parse(Assets.getText(Paths.xml('characters/$charName'))).firstElement();
+        var folder = (xml.get("sprite") ?? charName);
+        var iconPath = (xml.get("icon") ?? charName);
+        toCache = [Paths.image('characters/$folder'), Paths.image('icons/$iconPath')];
+        if (onComplete != null) onComplete(toCache);
+    } catch(e:Error) {
+        trace('Failed to cache character: $charName | $e');
+        if (onComplete != null) onComplete(toCache);
+    }
+}
+
+function postCreate() {
+    for (event in events) {
+        if (event.name != EVENT_NAME) continue;
+        PRELOAD(event);
+    }
+}
+
 function onEvent(e) {
     var event = e.event;
-    if (event.name != "Change Character") return;
+    if (event.name != EVENT_NAME) return;
     
     var params = event.params.copy();
     var strumlineIDX:Int = params.shift();
@@ -29,7 +61,9 @@ function onEvent(e) {
     insert(members.indexOf(character), new_character);
     remove(character, true);
     stage.applyCharStuff(new_character, charPosName, charIndex);
-    new_character.playAnim("idle");
+
+    var icon = (new_character.isPlayer) ? iconP1 : iconP2;
+    icon.setIcon(new_character.icon);
     
     strumLine.characters[charIndex] = new_character;
 }

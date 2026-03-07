@@ -9,7 +9,7 @@ using StringTools;
 final NOTE_NAME:String = "Rocket";
 
 var tordStrumLine(get, never):StrumLine;
-function get_tordStrumLine() return strumLines.members[2];
+function get_tordStrumLine() return strumLines.members[2] ?? strumLines.members[0];
 
 var tord(get, never):Character;
 function get_tord() return tordStrumLine.characters[0];
@@ -49,7 +49,7 @@ function postCreate() {
     target.colorTransform = new ColorTransform();
     insert(members.indexOf(strumLines)+1, target);
     target.antialiasing = true;
-    target.scale.set(0.55, 0.55);
+    target.scale.set(0.6, 0.6);
     target.updateHitbox();
     target.cameras = [camHUD];
     target.onDraw = target_draw;
@@ -69,7 +69,7 @@ function rocket_update(e:NoteUpdateEvent) {
 //region Target Sprite Appear
 var target_render_data:Array<Dynamic> = [];
 final TARGET_INTRO_TIME:Float = 0.25; // in seconds
-final COLOR_BEEP_TIME:Float = (Conductor.crochet*0.001)*4; // in seconds
+final COLOR_BEEP_TIME:Float = (Conductor.crochet*0.001)*4.5; // in seconds
 function target_draw(spr:FlxSprite) {
     var prev_scale = FlxPoint.weak(spr.scale.x, spr.scale.y);
     var prev_alpha = spr.alpha;
@@ -101,7 +101,10 @@ function target_appear(note:Note, offset:Float) {
     var color_interpolate:FlxInterpolateColor = new FlxInterpolateColor();
     color_interpolate.lerpTo(FlxColor.RED, 1);
     target_render_data.push({
-        strum: strum, time: note.strumTime, intro_anim: 0, remove_offset: offset, tord_anim: false,
+        strum: strum, time: note.strumTime,
+
+        intro_anim: 0, remove_offset: offset, tord_anim: false,
+
         color_beep_time: COLOR_BEEP_TIME,
         color_beep_amt: 0,
         color_beep_interp: color_interpolate,

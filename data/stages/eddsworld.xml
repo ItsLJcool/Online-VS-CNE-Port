@@ -1,3 +1,11 @@
 <!DOCTYPE codename-engine-stage>
-<stage folder="stages/eddsworld">
+<stage folder="stages/eddsworld/" name="eddsworld" zoom="0.75">
+	<sprite scrolly="0.25" x="-2297" sprite="SkyBox" y="-714" type="none" scale="1.5" scrollx="0.9" name="skyBox"/>
+	<sprite scrolly="0.85" x="-1884" sprite="SecondParalax" y="-684" type="none" scrollx="0.9" name="bg_paralax"/>
+	<sprite x="-1856.3986531643" sprite="HousesAndFloor" y="-626.915055334687" type="none" scale="0.9" name="bg"/>
+	<girlfriend x="368.686205536077" scroll="1" y="119.902981786027"/>
+	<boyfriend camxoffset="-200" x="889.874557284103" camyoffset="-50" y="99.7966710496862"/>
+	<dad x="80.2287638336717" y="94"/>
+	<sprite x="-1860.34308536087" sprite="fences" y="-625" scale="0.9" name="fences"/>
+	<sprite x="-2100" sprite="Car" y="-669.133219284789" scale="0.9" scrollx="1.25" name="car"/>
 </stage>

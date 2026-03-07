@@ -13,8 +13,7 @@ function onEvent(e) {
 	var doAltSing:Bool = params.shift();
 	var doAltIdle:Bool = params.shift();
 	var strumLine:StrumLine = strumLines.members[params.shift()];
-	var suffix:String = params.shift();
-	if (suffix != null) suffix = suffix.trim();
+	var suffix:String = (params.shift() ?? "").trim();
 	if (suffix.length  <= 0) suffix = "-alt";
 
 	if (doAltSing && strumLine != null) strumLine.animSuffix = suffix;
