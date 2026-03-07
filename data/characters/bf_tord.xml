@@ -4,6 +4,7 @@
 	<anim name="singDOWN" anim="BFSlideInDown"/>
 	<anim name="singLEFT" anim="BFSlideInLeft"/>
 	<anim name="singRIGHT" anim="BFSlideInRight"/>
-	<anim name="idle" anim="BF Look At Tord" x="225" y="-284"/>
+	<anim name="lookAtTord" anim="BF Look At Tord" x="225" y="-284"/>
 	<anim name="looksUp" anim="BF LookUp" x="-60" y="-30"/>
+	<anim name="idle" anim="BF Ground Shaking" x="225" y="-284"/>
 </character>
