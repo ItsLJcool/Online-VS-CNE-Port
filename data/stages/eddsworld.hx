@@ -6,8 +6,6 @@ import funkin.editors.charter.Charter;
 
 using StringTools;
 
-introLength = 0;
-
 final isEndMix:Bool = (PlayState.SONG.meta?.variant?.toLowerCase() == "end mix");
 
 function postCreate() {
