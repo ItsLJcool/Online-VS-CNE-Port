@@ -1,1 +1,1 @@
-{"events":[{"params":["matt_walks",""],"name":"HScript Call","time":21935.4838709677},{"params":["tom_walks",""],"time":33548.3870967742,"name":"HScript Call"}]}
+{"events":[{"params":["matt_walks",""],"name":"HScript Call","time":21935.4838709677},{"params":["tom_walks",""],"time":33548.3870967742,"name":"HScript Call"},{"params":["fixHealthColor",""],"time":76129.0322580645,"name":"HScript Call"},{"params":[false,"Player","edd",-65,-10],"time":76129.0322580645,"name":"Set Icon"},{"params":[true,"Opponent","eduardo",0,0],"time":76129.0322580645,"name":"Set Icon"}]}

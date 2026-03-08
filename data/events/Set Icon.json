@@ -1,0 +1,29 @@
+{
+	"params": [
+        {
+            "name": "Modify Existing Icon? (If false, New Icon)",
+            "type": "Bool",
+            "defaultValue": true
+        },
+        {
+            "name": "[Modify] Which Icon?",
+            "type": "DropDown('Opponent', 'Player')",
+            "defaultValue": "Opponent"
+        },
+        {
+            "name": "New Icon Character",
+            "type": "String",
+            "defaultValue": "bf"
+        },
+        {
+            "name": "Icon Offset (X)",
+            "type": "Float(-9999, 9999, 0.01, 5)",
+            "defaultValue": 0
+        },
+        {
+            "name": "Icon Offset (Y)",
+            "type": "Float(-9999, 9999, 0.01, 5)",
+            "defaultValue": 0
+        }
+	]
+}

@@ -44,6 +44,7 @@ function beatHit(curBeat:Int) {
         if (matt?.getAnimName()?.startsWith("idle")) matt.playAnim(matt.getAnimName());
         if (tom?.getAnimName()?.startsWith("idle")) tom.playAnim(tom.getAnimName());
     }
+
     if (!isEndMix) normal_beatHit(curBeat);
     // else end_mix_beatHit(curBeat);
 }
@@ -167,8 +168,20 @@ function onEvent(e) {
 }
 //endregion
 
+
+function fixHealthColor() {
+    healthBar.createFilledBar((!isEndMix) ? 0xFF10712B : 0xFFD9104B, 0xFF30B0D1);
+    healthBar.updateBar();
+    var point:FlxPoint = iconArray[2].extra.get("offset");
+    if (point == null) return;
+    var originalX:Float = point.x;
+    point.x = -250;
+    FlxTween.tween(point, {x: originalX}, 0.25);
+}
+
 if (!isEndMix){
 //region Normal Stage
+
 
 var isEduardoTime:Bool = false;
 
@@ -370,7 +383,7 @@ function omgTord() {
     FlxTween.tween(tordbot, {y: tordbot.y - 785}, time);
     // tordbot.y -= 785;
     FlxTween.tween(skyBox, {y: skyBox.y - 350}, time, {ease: FlxEase.smoothStepInOut});
-    if (!Charter.startHere) camGame.shake(0.005, time);
+    /*if (!Charter.startHere) */camGame.shake(0.005, time);
 
     matt.playAnim("tordReaction", true);  
     new FlxTimer().start((Conductor.crochet * 0.001)*3, () -> {
@@ -473,6 +486,13 @@ function tomUseful() {
 function amazingFLA() {
     matt.playAnim("phew", true);
     tom.playAnim("talking-finished", true);
+}
+
+function onDadHit(event:NoteHitEvent) {
+    if (!tordTime) return;
+    if (health <= 0.15) return;
+    event.healthGain = 0.0225;
+    if (event.note.isSustainNote) event.healthGain *= 0.75;
 }
 
 function onPostNoteHit(event:NoteHitEvent) {

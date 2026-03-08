@@ -1,6 +1,6 @@
 <!DOCTYPE codename-engine-character>
-<character icon="tord" color="#33AD33" applyStageMatrix="true" x="350" camx="-800" camy="-230">
-	<anim name="laugh" anim="TordHa"/>
+<character x="350" camx="-800" camy="-230" icon="tord" color="#D9104B" applyStageMatrix="true">
+	<anim name="laugh" anim="TordHa" x="6" y="1"/>
 	<anim name="laughIntro" anim="TordHa" indices="0..5"/>
 	<anim name="idle" anim="TordIdle"/>
 	<anim name="singLEFT" anim="TordLeft"/>

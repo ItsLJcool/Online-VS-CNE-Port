@@ -1,5 +1,5 @@
 <!DOCTYPE codename-engine-character>
-<character x="25" y="200" icon="eduardo" applyStageMatrix="true" camy="-175" camx="-185">
+<character x="25" y="200" camx="-185" camy="-175" color="#10712A" applyStageMatrix="true">
 	<anim name="punch" anim="EduardoPunch" x="170" y="210"/>
 	<anim name="idle" anim="EduardoIdle"/>
 	<anim name="singDOWN" anim="EduardoDown"/>

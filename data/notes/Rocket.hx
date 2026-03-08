@@ -27,6 +27,8 @@ final BEEP_SFX_LENGTHS:Array<Float> = [
 
 var target:FlxSprite = new FlxSprite().loadGraphic(Paths.image('stages/eddsworld/Target'));
 
+final LAST_RANDOM_ROCET_POS:Int = -1;
+
 function onNoteCreation(event:NoteCreationEvent) {
     if (event.noteType != NOTE_NAME) return;
     event.cancel();
@@ -40,6 +42,7 @@ function onNoteCreation(event:NoteCreationEvent) {
     event.note.updateHitbox();
 
     event.note.strumTime += CONDUCTOR_OFFSET;
+    LAST_RANDOM_ROCET_POS = event.note.noteData = FlxG.random.int(0, event.note.strumLine.members.length-1, [LAST_RANDOM_ROCET_POS]);
     event.note.extra.set("send_target", false);
 }
 
