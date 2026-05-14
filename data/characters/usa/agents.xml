@@ -1,0 +1,21 @@
+<!DOCTYPE codename-engine-character>
+<character y="200" sprite="agents_usa" icon="lol" applyStageMatrix="true">
+	<anim name="idle" anim="AgentIdle"/>
+	<anim name="sweep" anim="AgentSweeping" x="-141" y="-55" loop="true"/>
+	<anim name="walk" anim="AgentWalk" x="-138" y="-55" loop="true"/>
+	<anim name="fbiBackWalk" anim="FBIguyBACK" x="-229" y="-100" loop="true"/>
+	<anim name="nothing" anim="AgentNOTHINTOSEE" x="-133" y="-55" loop="true" indices="3"/>
+	<anim name="ship-get" anim="AgentsPickUpShip" x="217" y="-100" indices="1"/>
+	<anim name="truck-idle" anim="FBITruck" x="1172" y="759" loop="true" indices="0,1"/>
+	<anim name="truck-move" anim="FBITruck" x="1158" y="757" loop="true" indices="2..5"/>
+	<anim name="truck-ship" anim="ShipFallsonTruck" x="470" y="407"/>
+	<anim name="truck-leave" anim="FBITruck" x="1159" y="758" loop="true" indices="6..9"/>
+	<anim name="rope-agent" anim="AgentgoingdownRope" x="-164" y="-26"/>
+	<anim name="fuckin-rope" anim="Rope" x="-471" y="718"/>
+	<anim name="carryGF" anim="AgentsCarryGF" x="112" y="-48" loop="true"/>
+	<anim name="gasp" anim="GASP agent" x="-96" y="34"/>
+	<anim name="front" anim="FIBDudeInfront" x="28" y="-114"/>
+	<anim name="ranOver" anim="FBIAgentRUNOVER" x="-571" y="-2"/>
+	<anim name="shot-ball" anim="AgentGettingShotAt" x="-106" y="292"/>
+	<anim name="slashed" anim="AgentSlashed" x="46" y="88"/>
+</character>

@@ -1,0 +1,18 @@
+{
+	"opponentModeAllowed": false,
+	"icon": "face",
+	"difficulties": [
+		"hard"
+	],
+	"color": "#FFFFFF",
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"displayName": "Anywhere USA",
+	"needsVoices": true,
+	"beatsPerMeasure": 4,
+	"variants": [
+		"anywhere usa",
+		"fucked"
+	],
+	"bpm": 175
+}

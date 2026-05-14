@@ -1,0 +1,5 @@
+<!DOCTYPE codename-engine-character>
+<character x="-625" y="150" sprite="car_usa" icon="lol" applyStageMatrix="true">
+	<anim name="car-idle" anim="CarAlone" loop="true"/>
+	<anim name="idle" anim="CarDirectionals" x="-529" y="-36" indices="0..9" loop="true"/>
+</character>

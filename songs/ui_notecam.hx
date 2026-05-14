@@ -17,7 +17,7 @@ public var _singPosMap:Map<String, {x:Float, y:Float}> = [
 
 public var disable_camera_movement:Bool = true;
 
-function onCameraMove(e) {	
+function onCameraMove(e) {
 	CURRENT_OFFSET_AMOUNT.x = CURRENT_OFFSET_AMOUNT.y = 0;
 	var _anim:String = strumLines.members[curCameraTarget].characters[0].getAnimName();
 	var singAnims = [for (_i in _singPosMap.keys()) _i];
@@ -54,5 +54,5 @@ function postCreate() {
 }
 
 function onPostStartCountdown() {
-    FlxG.camera.zoom = defaultCamZoom;
+	FlxG.camera.zoom = defaultCamZoom;
 }

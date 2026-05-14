@@ -1,0 +1,19 @@
+<!DOCTYPE codename-engine-character>
+<character x="-200" y="565" sprite="bf_usa" flipX="true" camx="-950" camy="-1350" isPlayer="true" icon="bf" applyStageMatrix="true">
+	<anim name="idle-left" anim="BF idle dance"/>
+	<anim name="reacts" anim="boyfriend react" x="-305" y="190"/>
+	<anim name="idle" anim="BF idle dance otherside"/>
+	<anim name="HEY!" anim="BF otherside  HEY!" y="-3"/>
+	<anim name="singLEFT" anim="BFWalkLeft" x="-327" y="-27" loop="true"/>
+	<anim name="singDOWN" anim="BFWalkDown" x="-320" y="-27" loop="true"/>
+	<anim name="singUP" anim="BFWalkUp" x="-328" y="-27" loop="true"/>
+	<anim name="singRIGHT" anim="BFWalkRight" x="-313" y="43" loop="true"/>
+	<anim name="firstDeath" anim="WalkingGAMEOVER" x="152" y="240"/>
+	<anim name="deathLoop" anim="GAMEOVERLoop" x="152" y="240"/>
+	<anim name="deathConfirm" anim="GAMEOVERConfirm" x="152" y="240"/>
+	<anim name="pre-attack" anim="bf pre attack" x="-337" y="163"/>
+	<anim name="dodge" anim="boyfriend dodge" x="-308" y="190"/>
+	<anim name="into-car" anim="BFjumpsintocar" x="-294" y="205"/>
+	<anim name="victory-oh" anim="BFOthersideUhoh" x="1" y="-4"/>
+	<anim name="catch-gf" anim="BFCatchingGF" x="63" y="201"/>
+</character>

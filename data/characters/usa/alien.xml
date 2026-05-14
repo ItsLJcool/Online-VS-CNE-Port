@@ -1,0 +1,28 @@
+<!DOCTYPE codename-engine-character>
+<character x="-50" y="275" sprite="alien" camx="-2650" camy="-1700" icon="usa/alien" applyStageMatrix="true">
+	<anim name="ship" anim="AlienOnShip" x="645" y="71" loop="true"/>
+	<anim name="flying-dead" anim="DeadAlien" x="184" y="477" fps="1"/>
+	<anim name="ship-dies" anim="HominidFacePlanted" x="116" y="-248"/>
+	<anim name="gets-up" anim="Hominidgetsup" x="-149" y="-229"/>
+	<anim name="idle" anim="AlienHominidIdle"/>
+	<anim name="dash" anim="AlienDash" x="-96" y="-105"/>
+	<anim name="idle-crouch" anim="AlienHominidCrouchIdle" x="-77" y="-104"/>
+	<anim name="singLEFT" anim="HominidLeftPlay" x="-69" y="-19"/>
+	<anim name="singDOWN" anim="HominidDownPlay" x="-246" y="-57"/>
+	<anim name="singUP" anim="HominidUpPlay" x="-128" y="31"/>
+	<anim name="singRIGHT" anim="HominidRightPlay" x="-243" y="-38"/>
+	<anim name="idle-walk" anim="alienwalkcycle" x="-189" y="-96" loop="true"/>
+	<anim name="singLEFT-walk" anim="alienwalkcycleLEFT" x="-93" y="18" loop="true"/>
+	<anim name="singDOWN-walk" anim="alienwalkcycleDOWN" x="-179" y="-76" loop="true"/>
+	<anim name="singUP-walk" anim="alienwalkcycleUP" x="-100" y="40" loop="true"/>
+	<anim name="singRIGHT-walk" anim="alienwalkcycleRIGHT" x="-157" y="-90" loop="true"/>
+	<anim name="jump" anim="AlienHominidJump" x="-166" y="-119"/>
+	<anim name="jump-mouth" anim="AlienHominidJumpOpenMouth" x="-167" y="-121"/>
+	<anim name="stare" anim="AlienHominidStare"/>
+	<anim name="victory" anim="AlienHominidVICTORY!!!!"/>
+	<anim name="victory-oh" anim="AlienHominidUhOh"/>
+	<anim name="knife" anim="AlienHominidKnifeSwing" x="-149" y="-99"/>
+	<anim name="knife-mouth" anim="AlienHominidKnifeSwingOpenMouth" x="-147" y="-99"/>
+	<anim name="gun-spin" anim="hominidGunSpin" x="-136" y="-140"/>
+	<anim name="shoot-up" anim="HominidShootUp" x="-147" y="58"/>
+</character>

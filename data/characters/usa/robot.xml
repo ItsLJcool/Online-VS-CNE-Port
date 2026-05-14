@@ -1,0 +1,15 @@
+<!DOCTYPE codename-engine-character>
+<character x="-350" y="-450" sprite="robot_usa" icon="lol" applyStageMatrix="true">
+	<anim name="idle" anim="fuckedfinalboss" indices="0..14"/>
+	<anim name="singLEFT" anim="ROBOTLEFTPOSE" x="-30" y="-371"/>
+	<anim name="singDOWN" anim="ROBOTDOWN" x="-83" y="-387"/>
+	<anim name="singUP" anim="ROBOTUP" x="-71" y="-353"/>
+	<anim name="singRIGHT" anim="ROBOTRIGHT" x="-58" y="-398"/>
+	<anim name="enters" anim="fuckedfinalbossENTER!"/>
+	<anim name="hit" anim="robotHIT!" x="-3" y="-251"/>
+	<anim name="dies" anim="fuckedfinalbossDEATH"/>
+	<anim name="eyeFalls" anim="ROBOTEYEFALLSBACK" x="-614" y="-336"/>
+	<anim name="eyeLoop" anim="ROBOTEYEFALLSBACK" x="-614" y="-336" loop="true" indices="10..17"/>
+	<anim name="legs" anim="FBILEGS" x="-422" y="-936"/>
+	<anim name="legs-walk" anim="FBILEGSRESIZE" x="-386" y="-922" loop="true"/>
+</character>
