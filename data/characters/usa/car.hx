@@ -43,13 +43,9 @@ function postCreate() {
 		var element:FlxSpriteElement = new FlxSpriteElement(char);
 		element.active = false;
 
-		var placeholder:SymbolItem = library.getSymbol(anim_data[0].ref);
-		for (layer in placeholder.timeline.layers) {
-			layer.forEachFrame((frame) -> {
-				for (i in frame.elements) i.visible = false;
-			});
-		}
-		placeholder.timeline.layers[0].forEachFrame((frame) -> {
+		var placeholder_animation:SymbolItem = library.getSymbol(anim_data[0].ref);
+		for (layer in placeholder_animation.timeline.layers) layer.forEachFrame((frame) -> for (i in frame.elements) i.visible = false);
+		placeholder_animation.timeline.layers[0].forEachFrame((frame) -> {
 			frame.add(element);
 		});
 	}

@@ -1,0 +1,7 @@
+<!DOCTYPE codename-engine-stage>
+<stage folder="stages/usa/" name="usa" startCamPosX="750" startCamPosY="400" zoom="0.65">
+	<sprite x="-620" sprite="start/base" y="-842.212512762319" type="none" scale="1.5" name="fbi_bg"/>
+	<girlfriend/>
+	<dad/>
+	<boyfriend/>
+</stage>

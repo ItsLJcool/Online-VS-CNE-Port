@@ -1,7 +1,7 @@
 <!DOCTYPE codename-engine-character>
-<character x="-50" y="275" sprite="alien" camx="-2650" camy="-1700" icon="usa/alien" applyStageMatrix="true">
+<character x="-50" y="275" sprite="alien" camx="-2650" camy="-1700" applyStageMatrix="true">
 	<anim name="ship" anim="AlienOnShip" x="645" y="71" loop="true"/>
-	<anim name="flying-dead" anim="DeadAlien" x="184" y="477" fps="1"/>
+	<anim name="flying-dead" anim="DeadAlien" x="200" y="170" fps="1"/>
 	<anim name="ship-dies" anim="HominidFacePlanted" x="116" y="-248"/>
 	<anim name="gets-up" anim="Hominidgetsup" x="-149" y="-229"/>
 	<anim name="idle" anim="AlienHominidIdle"/>
